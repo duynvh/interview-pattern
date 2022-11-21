@@ -33,7 +33,7 @@ func findMaxSlidingWindow(nums []int, windowSize int) []int {
 	result = append(result, nums[window.Front()])
 
 	for i := windowSize; i < len(nums); i++ {
-		if !window.Empty() && nums[i] >= nums[window.Back()] {
+		for !window.Empty() && nums[i] >= nums[window.Back()] {
 			window.PopBack()
 		}
 

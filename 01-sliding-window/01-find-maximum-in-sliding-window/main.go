@@ -1,5 +1,10 @@
 // https://leetcode.com/problems/sliding-window-maximum/ (239 - Hard)
 
+// Solution summary
+// 1. Check for the window size. If the window size is greater than the array length, update the window size.
+// 2. Search for the maximum value in the first window.
+// 3. After finding the maximum value in the first window, repeat the same steps for the rest of the windows and store the maximum from each window in an array.
+
 package main
 
 import (

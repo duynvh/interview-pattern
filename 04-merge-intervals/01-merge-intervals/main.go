@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"sort"
 	"strings"
 )
 
@@ -10,6 +11,7 @@ func mergeIntervals(v []Interval) []Interval {
 		return nil
 	}
 
+	sort.Sort(Position(v))
 	result := make([]Interval, 0)
 
 	result = append(result, v[0])
@@ -77,6 +79,10 @@ func main() {
 			{0, 0},
 			{1, 18},
 			{1, 3},
+		},
+		{
+			{1, 4},
+			{0, 4},
 		},
 	}
 

@@ -45,7 +45,7 @@ func max(a, b int) int {
 }
 
 func main() {
-	str := []string{"abcabcbb", "pwwkew", "bbbbb", "ababababa", "", "ABCDEFGHI", "ABCDEDCBA", "AAAABBBBCCCCDDDD"}
+	str := []string{"au", "pwwkew", "bbbbb", "ababababa", "", "ABCDEFGHI", "ABCDEDCBA", "AAAABBBBCCCCDDDD"}
 	for i, s := range str {
 		fmt.Printf("%d.\tInput string: \"%s\"\n", i+1, s)
 		result := findLongestSubstring(s)

@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-func kthSmallestNumber(matrix [][]int, k int) int {
+func kthSmallestNumber	(matrix [][]int, k int) int {
 	minElement := newMinHeap()
 	for _, list := range matrix {
 		if len(list) == 0 {

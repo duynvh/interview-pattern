@@ -21,18 +21,17 @@ func binarySearchRotated(nums []int, target int) bool {
 
 		// if left half is sorted
 		if nums[mid] > nums[start] {
-			if target < nums[mid] && target >= nums[start] {
-				end = mid
+			if nums[mid] > target && nums[start] <= target {
+				end = mid - 1
 			} else {
 				start = mid + 1
 			}
-
 			// if right half is sorted
 		} else if nums[mid] < nums[start] {
-			if target > nums[mid] && target < nums[start] {
+			if nums[mid] < target && nums[start] >= target {
 				start = mid + 1
 			} else {
-				end = mid
+				end = mid - 1
 			}
 		} else {
 			start++

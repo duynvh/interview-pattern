@@ -15,6 +15,7 @@ func permuteStringRec(word string, currentIndex int, result *[]string) {
 	// Prevent adding duplicate permutations
 	if currentIndex == len(word)-1 {
 		*result = append(*result, word)
+        return
 	}
 
 	for i := currentIndex; i < len(word); i++ {

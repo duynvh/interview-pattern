@@ -23,6 +23,7 @@ func max(v1, v2 int) int {
 }
 
 func main() {
+	//
 	nums := []int{2, 3, 1, 1, 4}
 	fmt.Println(jumpGame(nums))
 }

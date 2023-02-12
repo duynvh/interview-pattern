@@ -29,7 +29,7 @@ func makeSquare(matchsticks []int) bool {
             if sides[j]+matchsticks[i] > target {
                 continue
             }
-
+            
             sides[j] += matchsticks[i]
             if dfs(i + 1) {
                 return true
